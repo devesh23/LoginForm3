@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/hola">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill the Registration Details"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="First Name"
+        android:id="@+id/Ffirst_name"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|bottom" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="15sp"
+        android:textColor="#000000"
+
+        android:id="@+id/first_name"
+        android:layout_alignBottom="@+id/Ffirst_name"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Last Name"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/Ffirst_name"
+        android:gravity="center_vertical|bottom"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/Ffirst_name"
+        android:layout_alignEnd="@+id/Ffirst_name"
+        android:layout_alignLeft="@+id/Ffirst_name"
+        android:layout_alignStart="@+id/Ffirst_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Email"
+        android:id="@+id/textView5"
+        android:gravity="center_vertical|bottom"
+        android:textStyle="bold"
+        android:textSize="25dp" android:ems="10"
+        android:textIsSelectable="false"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/E_Mail"
+        android:textSize="15sp"
+        android:textColor="#000000"
+
+        android:inputType="textPersonName" android:ems="10"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/first_name"
+        android:layout_alignEnd="@+id/first_name"
+        android:layout_alignLeft="@+id/first_name"
+        android:layout_alignStart="@+id/first_name"
+        android:layout_alignTop="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Username"
+        android:id="@+id/textView6"
+        android:gravity="center_vertical|bottom"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/User_Name"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textColor="#000000"
+
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignRight="@+id/E_Mail" android:ems="10"
+        android:layout_alignEnd="@+id/E_Mail"
+        android:layout_alignLeft="@+id/E_Mail"
+        android:layout_alignStart="@+id/E_Mail"
+        android:layout_alignBottom="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Password"
+        android:id="@+id/textView7"
+        android:gravity="center_vertical|bottom"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Pass_Word"
+        android:inputType="textWebPassword"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignLeft="@+id/User_Name"
+        android:textSize="15sp"
+        android:textColor="#000000"
+
+        android:layout_alignStart="@+id/User_Name"
+        android:layout_alignRight="@+id/User_Name"
+        android:layout_alignEnd="@+id/User_Name" android:ems="10"
+        android:layout_alignBottom="@+id/textView7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register_button"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignRight="@+id/Pass_Word"
+        android:layout_alignEnd="@+id/Pass_Word"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:textColor="#000000"
+        android:singleLine="false"
+        android:background="#FFFFFF" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/last_name"
+        android:layout_alignLeft="@+id/E_Mail"
+        android:layout_alignStart="@+id/E_Mail"
+        android:layout_alignRight="@+id/E_Mail"
+        android:layout_alignEnd="@+id/E_Mail"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_above="@+id/textView5" />
+</RelativeLayout>
