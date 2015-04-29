@@ -19,7 +19,7 @@ public class LoginDataBaseAdapter
     public static final int USERNAME_COLUMN=1;
     public static final int EMAIL_COLUMN=1;
     public static final int PASSWORD_COLUMN=1;
-    // TODO: Create public field for each column in your table.
+   
     // SQL Statement to create a new database.
     static final String DATABASE_CREATE = "create table "+"LOGIN"+
             "( " +"ID"+" integer primary key autoincrement,"+ "USERNAME  text,PASSWORD text,FIRSTNAME text,LASTNAME text, EMAIL text); ";
