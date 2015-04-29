@@ -63,7 +63,7 @@ public class Login extends Activity
                 String storedPassword=loginDataBaseAdapter.getSinlgeEntry(mail);
 
                 // check if the Stored password matches with  Password entered by user
-                if(password.equals(storedPassword))
+                if(p_word.equals(storedPassword))
                 {
                     Toast.makeText(Login.this, "Congrats: Login Successfull", Toast.LENGTH_LONG).show();
                 }
